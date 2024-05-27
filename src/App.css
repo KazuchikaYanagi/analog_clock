@@ -1,0 +1,167 @@
+:root {
+  --degSec: 0;
+}
+
+.App {
+  text-align: center;
+  padding-top: 100px;
+  /* background-image: url(./mrs_pic.jpeg); */
+  background-color: rgba(0, 0, 0, 0.95);
+  background-size: 100%;
+  /* z-index: 4; */
+}
+
+.background {
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-color: #000;
+  background-size: 100%;
+  /* z-index: 3; */
+}
+
+.circle {
+  width: 500px;
+  height: 100vh;
+  background-color: #000;
+  border-radius: 50%; /* change square to cicle */
+  margin: auto; /* set a green-yellow circle to center */
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+  width: 100%;
+}
+
+.center {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ffd700;
+  position: absolute;
+  top: calc(50% + 5px);
+  left: calc(50% + 3px);
+  z-index: 2;
+  transform: translate(-60%, -330%);
+  z-index: 4;
+}
+
+.circumference {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  border: solid #ffd700 2px;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.second-hand {
+  position: absolute;
+  transform-origin: 0 90% 0;
+  width: 5px;
+  height: 230px;
+  background: #ffd700;
+  /* top: calc(50% - 100px); */
+  top: calc(50% - 235px);
+  left: calc(50%);
+  rotate: var(--degSec);
+  z-index: 2;
+}
+
+.second-hand .triangle-right {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background-color: #000;
+  left: calc(50% - 2px);
+  z-index: 2;
+  /* clip-path: polygon(0 0, 50% 0%, 0 100%); */
+  clip-path: polygon(50% 0, 100% 0, 100% 100%);
+}
+
+.second-hand .triangle-left {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background-color: #000;
+  left: calc(50% - 3px);
+  z-index: 2;
+  clip-path: polygon(0 0, 50% 0%, 0 100%);
+  /* clip-path: polygon(50% 0, 100% 0, 100% 100%); */
+}
+
+.clock-face {
+  position: absolute;
+  top: 100px;
+  bottom: 190px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.clock-face-mark {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+}
+
+.circle-text {
+  position: absolute;
+  width: 400px;
+  height: 280px;
+  text-align: center;
+  margin: auto;
+  /* transform: rotate(`${hourTime}deg`); */
+  z-index: 3;
+  top: calc(50% - 250px);
+  left: calc(50% - 200px);
+  border-radius: 50%;
+}
+
+.circle-text p {
+  height: 195px;
+  font-size: 20px;
+  color: #ffd700;
+  font-weight: bold;
+  font-family: Didot, serif;
+}
+
+.circle-text p:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+@media screen(min-width: ) {
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
