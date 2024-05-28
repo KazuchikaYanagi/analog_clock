@@ -1,5 +1,6 @@
 import React from "react";
 import "./Clock.css";
+import Time from "../time/Time";
 
 const Marks = ({ angle, type }) => {
   return (
@@ -66,6 +67,7 @@ const Clock = () => {
           <p>Ⅵ</p>
         </div>
       </div>
+      <Time />
     </div>
   );
 };
