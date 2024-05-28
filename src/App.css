@@ -4,11 +4,9 @@
 
 .App {
   text-align: center;
-  padding-top: 100px;
-  /* background-image: url(./mrs_pic.jpeg); */
   background-color: rgba(0, 0, 0, 0.95);
   background-size: 100%;
-  /* z-index: 4; */
+  height: 100vh;
 }
 
 .background {
@@ -18,14 +16,19 @@
   /* z-index: 3; */
 }
 
+.room {
+  padding-top: 150px;
+}
+
 .circle {
   width: 500px;
-  height: 100vh;
+  height: 500px;
   background-color: #000;
   border-radius: 50%; /* change square to cicle */
   margin: auto; /* set a green-yellow circle to center */
   position: relative;
   z-index: 1;
+  /* margin-top: 100px; */
 }
 
 .inner {
@@ -33,24 +36,23 @@
 }
 
 .center {
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #ffd700;
   position: absolute;
-  top: calc(50% + 5px);
-  left: calc(50% + 3px);
+  top: 293px;
+  left: 251.4px;
   z-index: 2;
   transform: translate(-60%, -330%);
-  z-index: 4;
 }
 
 .circumference {
   position: absolute;
-  top: calc(50% - 42px);
-  left: calc(50% - 9px);
-  width: 18px;
-  height: 18px;
+  top: 239px;
+  left: 238px;
+  width: 20px;
+  height: 20px;
   border: solid #ffd700 2px;
   border-radius: 50%;
   z-index: 3;
@@ -60,11 +62,10 @@
   position: absolute;
   transform-origin: 0 90% 0;
   width: 5px;
-  height: 230px;
+  height: 235px;
   background: #ffd700;
-  /* top: calc(50% - 100px); */
-  top: calc(50% - 235px);
-  left: calc(50%);
+  top: 8%;
+  left: 49.5%;
   rotate: var(--degSec);
   z-index: 2;
 }
@@ -93,8 +94,8 @@
 
 .clock-face {
   position: absolute;
-  top: 100px;
-  bottom: 190px;
+  /* top: 100px; */
+  /* bottom: 190px; */
   left: 0;
   right: 0;
   z-index: 2;
@@ -122,11 +123,12 @@
 }
 
 .circle-text p {
-  height: 195px;
+  height: 205px;
   font-size: 20px;
   color: #ffd700;
   font-weight: bold;
   font-family: Didot, serif;
+  padding-top: 15px;
 }
 
 .circle-text p:nth-child(2) {
